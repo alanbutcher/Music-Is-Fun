@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="container-fluid bg-image">
     <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
         <div class="form-group">
@@ -24,11 +25,17 @@
     </div>
 
     <!--added code -->
-    <div class="container-fluid row col-4">
-    <ul id="song-list">
+    <div class="contatainer">
+        <div id="song-list" class="row">
+            <!-- <div class="col">
+                <ul id="song-list"> -->
         <!--SONGS ADDED DYNAMICALLY HERE-->
-    </ul>
+                <!-- </ul>
+            </div> -->
+        </div>
     </div>
+</div>
+    
     
 
 

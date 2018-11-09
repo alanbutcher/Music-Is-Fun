@@ -10,15 +10,13 @@ function drawSongs(results) {
   let template = ''
   results.forEach(song => {
     template += `
-    <div class='col card'>
-    <ul>
+    <div class='card m-3 text-center'>
       <img src = "${song.albumArt}">
-      <li>${song.title}</li>
-      <li>${song.artist}</li>
-      <li>${song.collection}</li>
+      <p>${song.title}</p>
+      <p>${song.artist}</p>
+      <p>${song.collection}</p>
       <a href="https://www.apple.com/itunes/" class="btn btn-outline-success my-2" role="button" aria-pressed ="true" style="margin-right:1vw">$${song.price}</a> 
-      <audio controls controlsList="nodownload" src="${song.preview}"></audio>
-    </ul>
+      <audio class="audio-width" controls controlsList="nodownload" src="${song.preview}"></audio>
     </div>
     `
   })
