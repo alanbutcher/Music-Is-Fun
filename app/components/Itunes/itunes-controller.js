@@ -11,7 +11,7 @@ function drawSongs(results) {
   results.forEach(song => {
     template += `
     <div class='card m-3 text-center'>
-      <img src = "${song.albumArt}">
+      <img class image src = "${song.albumArt}">
       <p>${song.title}</p>
       <p>${song.artist}</p>
       <p>${song.collection}</p>
@@ -22,7 +22,7 @@ function drawSongs(results) {
   })
   document.getElementById('song-list').innerHTML = template
 }
-
+//event listeners to make it only play one song at a time
 
 //PUBLIC
 class ItunesController {

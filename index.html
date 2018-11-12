@@ -6,44 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Music Is Fun!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container-fluid bg-image">
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+    <div class="jumbotron">
+            <h2 id="music" class="display-3 text-uppercase">Music
+                <small class="display-5 text-uppercase is-fun">is fun</small>
+            </h2>
+            
+            <p class="lead text secondary"><em>“Where words fail, music speaks.”</em> ― Hans Christian Andersen</p>
+        <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
+            <!-- <div class="form-group"> -->
             <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-        </div>
-    </form>
-    <div id="songs">
-
+            <button type="submit" class="btn btn-success" id="get-music-button">Get Music</button>
+            <!-- </div> -->
+        </form>
     </div>
-
-    <!--added code -->
-    <div class="contatainer">
-        <div id="song-list" class="row">
-            <!-- <div class="col">
-                <ul id="song-list"> -->
-        <!--SONGS ADDED DYNAMICALLY HERE-->
-                <!-- </ul>
-            </div> -->
-        </div>
+    
+    <div class="contatainer" id="bg-image">
+        <section class="row col-12 d-flex justify-content-around" id="song-list"></section>
     </div>
-</div>
     
-    
-
-
-
-
-
-
-
+    <footer class="bg-dark py-5 text-muted text-center">
+    <div class="containter">
+    <div class="class btn btn-group-sm my-3" role="group" aria-label="footer">
+        <button type="button" class="btn btn-secondary"><i class="fab fa-github"></i></button>
+        <button type="button" class="btn btn-secondary"><i class="fab fa-facebook-square"></i></button>
+        <button type="button" class="btn btn-secondary"><i class="fab fa-twitter-square"></i></button>
+    </div>
+        <small>
+            <p>&copy;Alan Butcher 2018</p>
+            <p><em>Seitan meggings chia art party austin coloring book, tilde artisan hammock church-key jianbing gluten-free twee lomo kitsch.</em></p>
+        </small>
+    </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="main.js"></script>
