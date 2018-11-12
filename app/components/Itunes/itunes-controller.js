@@ -16,11 +16,12 @@ function drawSongs(results) {
       <p>${song.artist}</p>
       <p>${song.collection}</p>
       <a href="https://www.apple.com/itunes/" class="btn btn-outline-success my-2" role="button" aria-pressed ="true" style="margin-right:1vw">$${song.price}</a> 
-      <audio class="audio-width" controls controlsList="nodownload" src="${song.preview}"></audio>
+      <audio class="audio-width" controls controlsList = "nodownload"  src="${song.preview}"></audio>
     </div>
     `
   })
   document.getElementById('song-list').innerHTML = template
+  
 }
 //event listeners to make it only play one song at a time
 
